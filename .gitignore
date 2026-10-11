@@ -1,13 +1,42 @@
+
+# ==========================================
+# RESEARCHFLOW AI - GITIGNORE
+# ==========================================
+
+# Secrets et cles API
 .env
 .env.*
 !.env.example
+.streamlit/secrets.toml
 
+# Environnements virtuels Python
 .venv/
 venv/
-__pycache__/
-*.pyc
+env/
 
-chroma_db/
-chroma/
+# Cache Python
+__pycache__/
+*.py[cod]
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Fichiers systeme
 .DS_Store
+
+# Base vectorielle locale ChromaDB
+chroma_db/
+
+# Documents personnels
+documents/*
+!documents/.gitkeep
+
+# Bases de donnees et logs
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Fichiers generes
+exports/
+reports/

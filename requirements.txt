@@ -1,0 +1,12 @@
+
+streamlit
+groq
+python-dotenv
+langgraph
+pydantic>=2,<3
+tavily-python
+pypdf
+chromadb==0.5.23
+sentence-transformers==3.0.1
+transformers==4.44.2
+numpy==1.26.4
